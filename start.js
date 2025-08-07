@@ -61,22 +61,22 @@ const msg = await store.loadMessage(key.remoteJid, key.id, undefined)
 return msg?.message || undefined
 }
 return {
-conversation: 'WhatsApp Bot By Lexzy'
+conversation: 'WhatsApp Bot By Cahyo'
 }}})
 	
 if (pairingCode && !Lexzy.authState.creds.registered) {
 let phoneNumber
 phoneNumber = await question(chalk.blue.bold(`
-
-██╗     ███████╗██╗  ██╗███████╗██╗   ██╗
-██║     ██╔════╝╚██╗██╔╝╚══███╔╝╚██╗ ██╔╝
-██║     █████╗   ╚███╔╝   ███╔╝  ╚████╔╝ 
-██║     ██╔══╝   ██╔██╗  ███╔╝    ╚██╔╝  
-███████╗███████╗██╔╝ ██╗███████╗   ██║   
-╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝       
+  ░██████     ░███    ░██     ░██ ░██     ░██   ░██████   
+ ░██   ░██   ░██░██   ░██     ░██  ░██   ░██   ░██   ░██  
+░██         ░██  ░██  ░██     ░██   ░██ ░██   ░██     ░██ 
+░██        ░█████████ ░██████████    ░████    ░██     ░██ 
+░██        ░██    ░██ ░██     ░██     ░██     ░██     ░██ 
+ ░██   ░██ ░██    ░██ ░██     ░██     ░██      ░██   ░██  
+  ░██████  ░██    ░██ ░██     ░██     ░██       ░██████        
 -----𝗠𝗔𝗦𝗨𝗞𝗜𝗡 𝗡𝗢 𝗟𝗨 𝗕𝗔𝗡𝗚-----:\n`))
 phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
-let code = await Lexzy.requestPairingCode(phoneNumber,"LEXZYNIH");
+let code = await Lexzy.requestPairingCode(phoneNumber,"CAHYOROM");
 code = code.match(/.{1,4}/g).join("") || code
 await console.log(`${chalk.blue.bold('Kode Pairing')} : ${chalk.white.bold(code)}`)
 }
@@ -128,11 +128,8 @@ await Lexzy.newsletterFollow("120363420721152393@newsletter");
 await Lexzy.newsletterFollow("120363400188426292@newsletter");
 await Lexzy.newsletterFollow("120363402869710306@newsletter");
 await Lexzy.newsletterFollow("120363394941015198@newsletter");
-Lexzy.sendMessage(Lexzy.user.id.split(":")[0] + "@s.whatsapp.net", {text: `${`*BOT TELAH TERSAMBUNG*
-JANGAN LUPA SUBS YT LEXZYMARKET
-*LINK SALURAN*
-https://whatsapp.com/channel/0029VbB2wFrI1rcovTbVQw16`.toString()}`})
-console.log(chalk.blue.bold(`PUSH X ALL MENU TERSAMBUNG ✓\n\n`))
+Lexzy.sendMessage(Lexzy.user.id.split(":")[0] + "@s.whatsapp.net", {text: `${`d[ o_0 ]b ✓`.toString()}`})
+console.log(chalk.green.bold(`BOT TELAH TERSAMBUNG ✓\n\n`))
 randomToken(Lexzy)
 } else if (receivedPendingNotifications == 'true') {
 console.log('Please wait About 1 Minute...')
