@@ -1,7 +1,7 @@
 {
-  "name": "Simpel bot Lexzy",
+  "name": "broadcast-bot",
   "version": "8.0",
-  "description": "WhatsApp Bot By Lexzymarket",
+  "description": "Broadcast Bot By Cahyorom",
   "main": "start.js",
   "type": "commonjs",
   "scripts": {
@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@hapi/boom": "^10.0.0",
-    "@whiskeysockets/baileys": "github:kiuur/bails",
+    "@whiskeysockets/baileys": "npm:@shennmine/baileys",
     "awesome-phonenumber": "^4.4.0",
     "axios": "^0.24.0",
     "canvafy": "^7.2.0",
